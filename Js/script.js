@@ -1,16 +1,29 @@
 const jokes = async () => {
-    const res = await fetch(
-        "https://v2.jokeapi.dev/joke/Programming?type=single"
-    );
+    const res = await fetch("https://v2.jokeapi.dev/joke/Any");
     const data = await res.json();
-    displayJokes(data);
+    console.log(data)
+    const type = data.type
+    if (type === 'single') {
+        displayJokeSingle(data);
+    }
+    else {
+        displayJokesTwoParts(data);
+    }
 };
 
-const displayJokes = (joke) => {
+const displayJokeSingle = (joke) => {
     const container = document.getElementById("joke-container");
     container.textContent = ``
     const p = document.createElement("p");
     p.innerText = joke.joke;
+    container.appendChild(p);
+};
+
+const displayJokesTwoParts = (joke) => {
+    const container = document.getElementById("joke-container");
+    container.textContent = ``
+    const p = document.createElement("p");
+    p.innerText = joke.setup + '...\n' + joke.delivery;
     container.appendChild(p);
 };
 
