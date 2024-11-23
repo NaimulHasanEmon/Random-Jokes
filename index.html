@@ -13,51 +13,50 @@
     <!-- Joke -->
     <main class="text-center px-4 sm:px-8 md:px-16 lg:px-32">
         <div class="flex items-center justify-center min-h-screen">
-            <div
-                class="grid bg-white border border-slate-200 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 rounded-xl p-4 sm:p-6 lg:p-8 text-sm">
-
-                <!-- Title -->
-                <h1 class="text-center text-slate-600 text-2xl sm:text-3xl font-bold col-span-6">Let's laugh together!🤣
-                </h1>
-
-                <!-- Main Joke -->
-                <div id="joke-container"
-                    class="p-4 sm:p-6 text-xl sm:text-2xl text-white font-semibold bg-slate-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-slate-200 col-span-6 resize-none outline-none rounded-lg duration-300 focus:border-slate-600 min-h-28">
+            <div class="bg-white border border-slate-200 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 rounded-xl p-4 sm:p-6 lg:p-8 text-sm">
+                <div class="items-center justify-center">
+                    <!-- Title -->
+                    <h1 class="text-center text-slate-600 text-2xl sm:text-3xl font-bold">Let's laugh together!🤣
+                    </h1>
+                    <!-- Main Joke -->
+                    <div id="joke-container"
+                        class="p-4 sm:p-6 text-xl sm:text-2xl text-white font-semibold bg-slate-100 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border border-slate-200 col-span-6 resize-none outline-none rounded-lg duration-300 focus:border-slate-600 min-h-28 my-3 md:my-4 lg:my-5">
+                    </div>
                 </div>
-
-                <!-- Funny! button -->
-                <button
-                    class="btn fill-slate-600 col-span-1 flex justify-center items-center rounded-lg p-2 duration-300 bg-slate-100 hover:border-slate-600 focus:fill-blue-200 focus:bg-blue-400 border border-slate-200"
-                    alt="Funny😂!" title="Funny😂!">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512">
-                        <path
-                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
-                        </path>
-                    </svg>
-                </button>
-
-                <!-- Not Funny! button -->
-                <button
-                    class="btn fill-slate-600 col-span-1 flex justify-center items-center rounded-lg p-2 duration-300 bg-slate-100 hover:border-slate-600 focus:fill-blue-200 focus:bg-blue-400 border border-slate-200"
-                    alt="Not funny☹️!" title="Not funny☹️!">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512">
-                        <path
-                            d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
-                        </path>
-                    </svg>
-                </button>
-
-                <!-- Next Button -->
-                <span class="col-span-2"></span>
-                <button onclick="jokes()"
-                    class="btn bg-slate-100 stroke-slate-600 border border-slate-200 col-span-2 flex justify-center rounded-lg p-2 duration-300 hover:border-slate-600 hover:text-white focus:stroke-slate-200-200 focus:bg-blue-400"
-                    alt="Another!⏭️" title="Another! ⏭️">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
-                    </svg>
-                </button>
+                <!-- All buttons -->
+                <div class="grid grid-cols-4 gap-4">
+                    <!-- Funny! button -->
+                    <button
+                        class="btn fill-slate-600 rounded-lg p-2 duration-300 bg-slate-100 hover:border-slate-600 focus:fill-blue-200 focus:bg-blue-400 border border-slate-200"
+                        alt="Funny😂!" title="Funny😂!">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512">
+                            <path
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                            </path>
+                        </svg>
+                    </button>
+                
+                    <!-- Not Funny! button -->
+                    <button
+                        class="btn fill-slate-600 rounded-lg p-2 duration-300 bg-slate-100 hover:border-slate-600 focus:fill-blue-200 focus:bg-blue-400 border border-slate-200"
+                        alt="Not funny☹️!" title="Not funny☹️!">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 512 512">
+                            <path
+                                d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM174.6 384.1c-4.5 12.5-18.2 18.9-30.7 14.4s-18.9-18.2-14.4-30.7C146.9 319.4 198.9 288 256 288s109.1 31.4 126.6 79.9c4.5 12.5-2 26.2-14.4 30.7s-26.2-2-30.7-14.4C328.2 358.5 297.2 336 256 336s-72.2 22.5-81.4 48.1zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                            </path>
+                        </svg>
+                    </button>
+                
+                    <!-- Next Button -->
+                    <span class="row-span-1"></span>
+                    <button onclick="jokes()"
+                        class="btn bg-slate-100 stroke-slate-600 border border-slate-200 flex rounded-lg p-2 duration-300 hover:border-slate-600 hover:text-white focus:stroke-slate-200-200 focus:bg-blue-400"
+                        alt="Another!⏭️" title="Another! ⏭️">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
